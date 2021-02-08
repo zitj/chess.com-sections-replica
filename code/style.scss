@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300;400;500;600&display=swap');
 
 body {
     background: rgb(144, 129, 109);
@@ -39,6 +39,9 @@ body {
         }
         &:hover {
             background: rgba(255, 255, 255, 0.085);
+            p {
+                color: rgba(255, 255, 255, 0.849);
+            }
         }
         svg,
         p {
@@ -48,6 +51,7 @@ body {
             transform: scale(0.9);
             &:nth-child(1) {
                 margin-left: -20px;
+
                 #senka {
                     transition: 0.2s ease-in-out;
                     opacity: 0;
@@ -57,13 +61,105 @@ body {
                     transition: 0.2s;
                 }
             }
+
+            .st0 {
+                opacity: 0.4;
+            }
+            .st1 {
+                fill: #ebe8cd;
+            }
+            .st2 {
+                opacity: 0.6;
+            }
+            .st3 {
+                fill: #9c9e8f;
+            }
+            .st4 {
+                opacity: 0.04;
+            }
+            .st5 {
+                fill: #c2bfa8;
+            }
+            .st6 {
+                opacity: 0.8;
+            }
+            .st7 {
+                fill: #fdffff;
+            }
+            .st8 {
+                fill: #f2eed3;
+            }
+            .st9 {
+                opacity: 0.1;
+            }
+            .st10 {
+                fill: #e8c39d;
+            }
+            .st11 {
+                fill: #e3c099;
+            }
+            .st12 {
+                opacity: 0.4;
+                fill: #cead87;
+            }
+            .st13 {
+                fill: #d97b2c;
+            }
+            .st14 {
+                opacity: 0.2;
+                fill: #ffffff;
+                stroke: #f29e5f;
+                stroke-miterlimit: 10;
+            }
+            .st15 {
+                opacity: 0.1;
+                fill: #050505;
+            }
+            .st16 {
+                fill: #6b9c40;
+            }
+            .st17 {
+                fill: #ffffff;
+            }
+
+            .st18 {
+                font-family: 'Concert One', cursive;
+                font-size: 24px;
+            }
         }
+
         p {
             margin-top: 0;
             font-size: 1em;
             font-weight: 600;
             margin-bottom: 25px;
-            color: white;
+            color: rgba(255, 255, 255, 0.473);
+        }
+        &:nth-child(2) {
+            svg {
+                transform: translateX(10px) scale(0.9);
+
+                #puzla {
+                    transition: 0.2s ease-in-out;
+                }
+                #question {
+                    opacity: 0;
+                    transform-origin: center;
+                    transform: rotate(-10deg) scale(0.75);
+                    transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
+                }
+            }
+            &:hover {
+                svg {
+                    #question {
+                        opacity: 1;
+                        transform: rotate(10deg) scale(0.9);
+                    }
+                    #puzla {
+                        transform: scale(0.96);
+                    }
+                }
+            }
         }
     }
 }

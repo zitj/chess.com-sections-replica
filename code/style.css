@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300;400;500;600&display=swap");
 body {
   background: #90816d;
   font-family: 'Poppins', sans-serif;
@@ -57,6 +57,10 @@ body {
   background: rgba(255, 255, 255, 0.085);
 }
 
+.wrapper .box:hover p {
+  color: rgba(255, 255, 255, 0.849);
+}
+
 .wrapper .box svg,
 .wrapper .box p {
   display: -webkit-box;
@@ -85,11 +89,124 @@ body {
   transition: 0.2s;
 }
 
+.wrapper .box svg .st0 {
+  opacity: 0.4;
+}
+
+.wrapper .box svg .st1 {
+  fill: #ebe8cd;
+}
+
+.wrapper .box svg .st2 {
+  opacity: 0.6;
+}
+
+.wrapper .box svg .st3 {
+  fill: #9c9e8f;
+}
+
+.wrapper .box svg .st4 {
+  opacity: 0.04;
+}
+
+.wrapper .box svg .st5 {
+  fill: #c2bfa8;
+}
+
+.wrapper .box svg .st6 {
+  opacity: 0.8;
+}
+
+.wrapper .box svg .st7 {
+  fill: #fdffff;
+}
+
+.wrapper .box svg .st8 {
+  fill: #f2eed3;
+}
+
+.wrapper .box svg .st9 {
+  opacity: 0.1;
+}
+
+.wrapper .box svg .st10 {
+  fill: #e8c39d;
+}
+
+.wrapper .box svg .st11 {
+  fill: #e3c099;
+}
+
+.wrapper .box svg .st12 {
+  opacity: 0.4;
+  fill: #cead87;
+}
+
+.wrapper .box svg .st13 {
+  fill: #d97b2c;
+}
+
+.wrapper .box svg .st14 {
+  opacity: 0.2;
+  fill: #ffffff;
+  stroke: #f29e5f;
+  stroke-miterlimit: 10;
+}
+
+.wrapper .box svg .st15 {
+  opacity: 0.1;
+  fill: #050505;
+}
+
+.wrapper .box svg .st16 {
+  fill: #6b9c40;
+}
+
+.wrapper .box svg .st17 {
+  fill: #ffffff;
+}
+
+.wrapper .box svg .st18 {
+  font-family: 'Concert One', cursive;
+  font-size: 24px;
+}
+
 .wrapper .box p {
   margin-top: 0;
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 25px;
-  color: white;
+  color: rgba(255, 255, 255, 0.473);
+}
+
+.wrapper .box:nth-child(2) svg {
+  -webkit-transform: translateX(10px) scale(0.9);
+          transform: translateX(10px) scale(0.9);
+}
+
+.wrapper .box:nth-child(2) svg #puzla {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.wrapper .box:nth-child(2) svg #question {
+  opacity: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-10deg) scale(0.75);
+          transform: rotate(-10deg) scale(0.75);
+  -webkit-transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
+  transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
+}
+
+.wrapper .box:nth-child(2):hover svg #question {
+  opacity: 1;
+  -webkit-transform: rotate(10deg) scale(0.9);
+          transform: rotate(10deg) scale(0.9);
+}
+
+.wrapper .box:nth-child(2):hover svg #puzla {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
 }
 /*# sourceMappingURL=style.css.map */
