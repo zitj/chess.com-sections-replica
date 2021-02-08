@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300;400;500;600&display=swap');
 
 body {
-    background: rgb(144, 129, 109);
+    background: rgb(119, 131, 134);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: rgba(59, 59, 59, 0.301);
+        background: rgba(77, 77, 77, 0.472);
         height: 200px;
         width: 200px;
         border-bottom: 8px solid rgba(0, 0, 0, 0.719);
@@ -38,9 +38,9 @@ body {
             }
         }
         &:hover {
-            background: rgba(255, 255, 255, 0.085);
+            background: rgba(255, 255, 255, 0.157);
             p {
-                color: rgba(255, 255, 255, 0.849);
+                color: rgba(255, 255, 255, 0.801);
             }
         }
         svg,
@@ -49,17 +49,16 @@ body {
         }
         svg {
             transform: scale(0.9);
-            &:nth-child(1) {
-                margin-left: -20px;
 
-                #senka {
-                    transition: 0.2s ease-in-out;
-                    opacity: 0;
-                }
-                #pion,
-                #ruka {
-                    transition: 0.2s;
-                }
+            margin-left: -20px;
+
+            #senka {
+                transition: 0.2s ease-in-out;
+                opacity: 0;
+            }
+            #pion,
+            #ruka {
+                transition: 0.2s;
             }
 
             .st0 {
@@ -106,17 +105,17 @@ body {
                 fill: #d97b2c;
             }
             .st14 {
-                opacity: 0.2;
+                opacity: 0.13;
                 fill: #ffffff;
                 stroke: #f29e5f;
                 stroke-miterlimit: 10;
             }
             .st15 {
-                opacity: 0.1;
+                opacity: 0.08;
                 fill: #050505;
             }
             .st16 {
-                fill: #6b9c40;
+                fill: #62903a;
             }
             .st17 {
                 fill: #ffffff;
@@ -144,8 +143,8 @@ body {
                 }
                 #question {
                     opacity: 0;
-                    transform-origin: center;
-                    transform: rotate(-10deg) scale(0.75);
+                    transform-origin: bottom;
+                    transform: rotate(5deg) scale(0.75);
                     transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
                 }
             }
@@ -153,7 +152,7 @@ body {
                 svg {
                     #question {
                         opacity: 1;
-                        transform: rotate(10deg) scale(0.9);
+                        transform: rotate(-5deg) scale(0.9);
                     }
                     #puzla {
                         transform: scale(0.96);
