@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 body {
-  background: #d8d8d8;
+  background: #90816d;
+  font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -24,15 +26,70 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(59, 59, 59, 0.301);
   height: 200px;
   width: 200px;
   border-bottom: 8px solid rgba(0, 0, 0, 0.719);
   border-radius: 15px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
+.wrapper .box:nth-child(1):hover svg #senka {
+  opacity: 0.5;
+}
+
+.wrapper .box:nth-child(1):hover svg #pion,
+.wrapper .box:nth-child(1):hover svg #ruka {
+  -webkit-transform: translateY(-20px) rotateZ(10deg) translateX(10px);
+          transform: translateY(-20px) rotateZ(10deg) translateX(10px);
+}
+
 .wrapper .box:hover {
-  background: rgba(0, 0, 0, 0.137);
+  background: rgba(255, 255, 255, 0.085);
+}
+
+.wrapper .box svg,
+.wrapper .box p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .box svg {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.wrapper .box svg:nth-child(1) {
+  margin-left: -20px;
+}
+
+.wrapper .box svg:nth-child(1) #senka {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.wrapper .box svg:nth-child(1) #pion,
+.wrapper .box svg:nth-child(1) #ruka {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .box p {
+  margin-top: 0;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
