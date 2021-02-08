@@ -1,0 +1,38 @@
+body {
+  background: #d8d8d8;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 400px;
+  width: 1000px;
+}
+
+.wrapper .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(59, 59, 59, 0.301);
+  height: 200px;
+  width: 200px;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.719);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.wrapper .box:hover {
+  background: rgba(0, 0, 0, 0.137);
+}
+/*# sourceMappingURL=style.css.map */
