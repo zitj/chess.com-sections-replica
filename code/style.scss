@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300;400;500;600&display=swap');
 
 body {
-    background: rgb(119, 131, 134);
+    background: rgb(65, 66, 66);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: rgba(77, 77, 77, 0.472);
+        background: rgba(104, 107, 107, 0.555);
         height: 200px;
         width: 200px;
         border-bottom: 8px solid rgba(0, 0, 0, 0.719);
@@ -38,7 +38,7 @@ body {
             }
         }
         &:hover {
-            background: rgba(255, 255, 255, 0.157);
+            background: rgba(255, 255, 255, 0.274);
             p {
                 color: rgba(255, 255, 255, 0.801);
             }
@@ -125,6 +125,23 @@ body {
                 font-family: 'Concert One', cursive;
                 font-size: 24px;
             }
+            .st19 {
+                fill: #3a709b;
+                stroke: #3a709b;
+                stroke-miterlimit: 10;
+            }
+            .st20 {
+                fill: #5d8baf;
+            }
+            .st21 {
+                fill: #628eb3;
+            }
+            .st22 {
+                fill: #095786;
+            }
+            .st23 {
+                fill: #99afbe;
+            }
         }
 
         p {
@@ -132,7 +149,7 @@ body {
             font-size: 1em;
             font-weight: 600;
             margin-bottom: 25px;
-            color: rgba(255, 255, 255, 0.473);
+            color: rgba(255, 255, 255, 0.513);
         }
         &:nth-child(2) {
             svg {
@@ -144,7 +161,7 @@ body {
                 #question {
                     opacity: 0;
                     transform-origin: bottom;
-                    transform: rotate(5deg) scale(0.75);
+                    transform: rotate(-5deg) scale(0.75);
                     transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
                 }
             }
@@ -152,13 +169,57 @@ body {
                 svg {
                     #question {
                         opacity: 1;
-                        transform: rotate(-5deg) scale(0.9);
+                        transform: rotate(7deg) scale(0.9) translateX(-13px)
+                            translateY(-5px);
                     }
                     #puzla {
-                        transform: scale(0.96);
+                        transform: scale(0.9);
                     }
                 }
             }
         }
+        &:nth-child(3) {
+            svg {
+                transform: scale(0.65);
+                margin-left: -5px;
+                #kapa {
+                    transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
+                    transform-origin: left;
+                }
+                #percin {
+                    // transition: 0.3s cubic-bezier(0.04, 1.43, 0.91, 1.56);
+                    transform: rotate(0deg) translateY(0px);
+                    transform-origin: left;
+                }
+                #percin.hovered {
+                    animation: percin 0.8s ease-in-out;
+                }
+            }
+            &:hover {
+                #kapa {
+                    transform: rotate(-8deg) translateY(5px);
+                }
+                #percin {
+                    transform: skewX(-10deg) translateY(2px);
+                }
+            }
+        }
+    }
+}
+@keyframes percin {
+    0% {
+        transform: skewX(0deg) translateY(2px);
+    }
+
+    30% {
+        transform: skewX(-17deg) translateY(2px) translateX(-2px);
+    }
+
+    70% {
+        transform: skew(-7deg) translateY(2px);
+    }
+
+    100% {
+        transform: skewX(-10deg) translateY(2px);
     }
 }
