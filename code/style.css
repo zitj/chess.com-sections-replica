@@ -236,8 +236,8 @@ body {
 }
 
 .wrapper .box:nth-child(3) svg #kapa {
-  -webkit-transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
-  transition: 0.2s cubic-bezier(0.04, 1.43, 0.91, 1.56);
+  -webkit-transition: 0.19s cubic-bezier(0.04, 1.43, 0.91, 1.56);
+  transition: 0.19s cubic-bezier(0.04, 1.43, 0.91, 1.56);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
@@ -255,8 +255,8 @@ body {
 }
 
 .wrapper .box:nth-child(3):hover #kapa {
-  -webkit-transform: rotate(-8deg) translateY(5px);
-          transform: rotate(-8deg) translateY(5px);
+  -webkit-transform: rotate(-10deg) translateY(5px) skew(2deg);
+          transform: rotate(-10deg) translateY(5px) skew(2deg);
 }
 
 .wrapper .box:nth-child(3):hover #percin {
