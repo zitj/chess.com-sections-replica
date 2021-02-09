@@ -187,7 +187,34 @@ body {
 }
 
 .wrapper .box svg .st23 {
-  fill: #99afbe;
+  fill: #99b7c0;
+}
+
+.wrapper .box svg .st24 {
+  fill: #dad6d3;
+}
+
+.wrapper .box svg .st25 {
+  fill: #e8e6e3;
+}
+
+.wrapper .box svg .st26 {
+  fill: #b9b8b5;
+}
+
+.wrapper .box svg .st27 {
+  fill: #537a87;
+}
+
+.wrapper .box svg .st28 {
+  fill: #7dacc8;
+}
+
+.wrapper .box svg .st29 {
+  fill: none;
+  stroke: #e1dcda;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
 }
 
 .wrapper .box p {
@@ -262,6 +289,43 @@ body {
 .wrapper .box:nth-child(3):hover #percin {
   -webkit-transform: skewX(-10deg) translateY(2px);
           transform: skewX(-10deg) translateY(2px);
+}
+
+.wrapper .box:nth-child(4) svg {
+  -webkit-transform: scale(0.83);
+          transform: scale(0.83);
+  margin-left: -2px;
+  margin-top: 10px;
+}
+
+.wrapper .box:nth-child(4) svg #chess {
+  -webkit-clip-path: circle(0%);
+          clip-path: circle(0%);
+  -webkit-transform: scale(0.8) translateX(0px);
+          transform: scale(0.8) translateX(0px);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.wrapper .box:nth-child(4) svg #ekran {
+  -webkit-transition: 0.25s cubic-bezier(0.08, 0.57, 0.27, 0.97);
+  transition: 0.25s cubic-bezier(0.08, 0.57, 0.27, 0.97);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.wrapper .box:nth-child(4):hover #chess {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+  -webkit-transform: scale(0.8) translateY(-8px);
+          transform: scale(0.8) translateY(-8px);
+}
+
+.wrapper .box:nth-child(4):hover #ekran {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 
 @-webkit-keyframes percin {

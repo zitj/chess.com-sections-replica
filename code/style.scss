@@ -140,7 +140,28 @@ body {
                 fill: #095786;
             }
             .st23 {
-                fill: #99afbe;
+                fill: #99b7c0;
+            }
+            .st24 {
+                fill: #dad6d3;
+            }
+            .st25 {
+                fill: #e8e6e3;
+            }
+            .st26 {
+                fill: #b9b8b5;
+            }
+            .st27 {
+                fill: #537a87;
+            }
+            .st28 {
+                fill: #7dacc8;
+            }
+            .st29 {
+                fill: none;
+                stroke: #e1dcda;
+                stroke-width: 6;
+                stroke-miterlimit: 10;
             }
         }
 
@@ -203,8 +224,35 @@ body {
                 }
             }
         }
+        &:nth-child(4) {
+            svg {
+                transform: scale(0.83);
+                margin-left: -2px;
+                margin-top: 10px;
+                #chess {
+                    clip-path: circle(0%);
+                    transform: scale(0.8) translateX(0px);
+                    transform-origin: center;
+                    transition: 0.2s ease-in-out;
+                }
+                #ekran {
+                    transition: 0.25s cubic-bezier(0.08, 0.57, 0.27, 0.97);
+                    transform: translateY(0px);
+                }
+            }
+            &:hover {
+                #chess {
+                    clip-path: circle(100%);
+                    transform: scale(0.8) translateY(-8px);
+                }
+                #ekran {
+                    transform: translateY(-4px);
+                }
+            }
+        }
     }
 }
+
 @keyframes percin {
     0% {
         transform: skewX(0deg) translateY(2px);
